@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reimagining Enterprise Dashboards Through Conversational AI — Mia Huynh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="case-study-page">
+  <header class="header">
+    <a href="../index.html" class="logo">Mia Huynh</a>
+    <nav class="nav">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="header-image" aria-hidden="true"></div>
+  </header>
+
+  <main class="case-study-main">
+    <section class="case-hero reveal-section">
+      <h1 class="case-hero-title reveal-ready">Reimagining Enterprise Dashboards Through Conversational AI</h1>
+      <div class="case-meta-grid">
+        <div class="case-meta-item reveal-ready reveal-stagger-1"><span class="case-meta-label">Role</span> Lead Product Designer</div>
+        <div class="case-meta-item reveal-ready reveal-stagger-2"><span class="case-meta-label">Timeline</span> [Add timeline]</div>
+        <div class="case-meta-item reveal-ready reveal-stagger-3"><span class="case-meta-label">Impact</span> [Add impact summary]</div>
+      </div>
+    </section>
+
+    <section class="case-summary reveal-section">
+      <div class="case-summary-grid">
+        <div class="case-summary-col reveal-ready reveal-stagger-1">
+          <div class="case-summary-label">The Challenge</div>
+          <p class="case-summary-body">[Describe the problem: e.g. enterprise users overwhelmed by dense dashboards and needed faster ways to get answers and take action.]</p>
+        </div>
+        <div class="case-summary-col reveal-ready reveal-stagger-2">
+          <div class="case-summary-label">The Action</div>
+          <p class="case-summary-body">[Describe your approach: research, conversational AI integration, dashboard simplification, and cross-functional alignment.]</p>
+        </div>
+        <div class="case-summary-col reveal-ready reveal-stagger-3">
+          <div class="case-summary-label">The Result</div>
+          <p class="case-summary-body">[Describe outcomes: improved task completion, reduced time-to-insight, or adoption metrics.]</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-lightbox" id="case-lightbox" role="dialog" aria-modal="true" aria-label="Expand image" hidden>
+      <div class="case-lightbox-backdrop" id="case-lightbox-backdrop"></div>
+      <div class="case-lightbox-content">
+        <img class="case-lightbox-img" id="case-lightbox-img" src="" alt="" />
+      </div>
+      <p class="case-lightbox-caption" id="case-lightbox-caption"></p>
+    </div>
+
+    <section class="case-section case-overview-with-state reveal-section">
+      <div class="case-section__content case-overview-state-wrap">
+        <div class="case-overview-content reveal-ready reveal-stagger-1">
+          <h2 class="case-heading">Overview</h2>
+          <div class="case-prose">
+            <p>[Add context: how this project started, who it serves, and why conversational AI was the right direction for T-Mobile for Business enterprise dashboards.]</p>
+            <p>[Second paragraph: scope, team structure, and key constraints or opportunities.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-work-nobody-saw reveal-section">
+      <div class="case-work-nobody-saw-inner">
+        <h2 class="case-heading reveal-ready reveal-stagger-1">Discovery & Strategy</h2>
+        <div class="case-prose case-prose-wide reveal-ready reveal-stagger-2">
+          <p>[Describe research and discovery: user interviews, pain points, and how you defined success criteria for the AI-assisted dashboard experience.]</p>
+          <p>[Describe strategy: information architecture, conversation flows, and how you balanced power-user needs with accessibility of natural language.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section case-moving-forward reveal-section">
+      <h2 class="case-heading reveal-ready reveal-stagger-1">The Outcome</h2>
+      <div class="case-prose reveal-ready reveal-stagger-2">
+        <p>[Summarize what shipped: new dashboard patterns, conversational entry points, and any measurable impact or next steps.]</p>
+      </div>
+    </section>
+
+    <section class="case-section case-learned reveal-section">
+      <div class="case-learned-inner content-track">
+        <h2 class="case-heading reveal-ready reveal-stagger-1">What I Learned</h2>
+        <div class="case-learned-grid reveal-ready reveal-stagger-2">
+          <div class="case-learned-item">
+            <p class="case-learned-lesson">[Lesson 1: e.g. conversational UI works best when anchored to clear system capabilities and guardrails.]</p>
+          </div>
+          <div class="case-learned-item">
+            <p class="case-learned-lesson">[Lesson 2]</p>
+          </div>
+          <div class="case-learned-item">
+            <p class="case-learned-lesson">[Lesson 3]</p>
+          </div>
+          <div class="case-learned-item">
+            <p class="case-learned-lesson">[Lesson 4]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    (function () {
+      var lightbox = document.getElementById('case-lightbox');
+      var lightboxImg = document.getElementById('case-lightbox-img');
+      var lightboxCaption = document.getElementById('case-lightbox-caption');
+      var backdrop = document.getElementById('case-lightbox-backdrop');
+      var closeTimeout = null;
+
+      function openLightbox(src, caption) {
+        if (closeTimeout) clearTimeout(closeTimeout);
+        lightboxImg.src = src;
+        lightboxImg.alt = caption || '';
+        lightboxCaption.textContent = caption || '';
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(function () { lightbox.classList.add('is-open'); });
+      }
+
+      function closeLightbox() {
+        if (!lightbox.classList.contains('is-open')) return;
+        lightbox.classList.remove('is-open');
+        closeTimeout = setTimeout(function () {
+          lightbox.hidden = true;
+          document.body.style.overflow = '';
+          closeTimeout = null;
+        }, 200);
+      }
+
+      document.querySelectorAll('.case-lightbox-trigger').forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          var src = trigger.getAttribute('data-lightbox-src');
+          var caption = trigger.getAttribute('data-lightbox-caption');
+          if (src) openLightbox(src, caption);
+        });
+        trigger.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            var src = trigger.getAttribute('data-lightbox-src');
+            var caption = trigger.getAttribute('data-lightbox-caption');
+            if (src) openLightbox(src, caption);
+          }
+        });
+      });
+
+      if (backdrop) backdrop.addEventListener('click', closeLightbox);
+      if (lightboxImg) lightboxImg.addEventListener('click', closeLightbox);
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
+      });
+    })();
+
+    (function () {
+      var sections = document.querySelectorAll('.reveal-section');
+      if (!sections.length) return;
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            var section = entry.target;
+            section.classList.add('revealed');
+            observer.unobserve(section);
+          });
+        },
+        { threshold: 0.2, rootMargin: '0px' }
+      );
+      sections.forEach(function (section) {
+        observer.observe(section);
+      });
+    })();
+  </script>
+</body>
+</html>
