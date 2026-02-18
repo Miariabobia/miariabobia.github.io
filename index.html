@@ -84,7 +84,8 @@
           outcome: 'Reimagining Enterprise Dashboards Through Conversational AI',
           readingTime: '5 mins',
           tags: ['AI', 'Systems', 'Strategy'],
-          href: 'work/enterprise-dashboards.html'
+          href: 'work/enterprise-dashboards.html',
+          incomplete: true
         },
         {
           year: '2025',
@@ -92,7 +93,8 @@
           outcome: 'Create-a-Thon: GPT Workflow Optimization',
           readingTime: '7 mins',
           tags: ['AI', 'Systems'],
-          href: '#'
+          href: '#',
+          incomplete: true
         },
         {
           year: '2024',
@@ -100,7 +102,8 @@
           outcome: 'Network: Speech to Text',
           readingTime: '5 mins',
           tags: ['Advanced Prototyping', 'Exploratory'],
-          href: 'work/project-template-2.html'
+          href: 'work/project-template-2.html',
+          incomplete: true
         },
         {
           year: '2023-2024',
@@ -108,7 +111,8 @@
           outcome: 'Explorer Prep Program Mentor',
           readingTime: '6 mins',
           tags: ['Leadership'],
-          href: 'work/project-template-1.html'
+          href: 'work/project-template-1.html',
+          incomplete: true
         },
         {
           year: '2022',
@@ -116,7 +120,8 @@
           outcome: '10X Innovation Fellowship',
           readingTime: '6 mins',
           tags: ['AI', 'Exploratory', 'Systems', 'Strategy'],
-          href: 'work/project-template-3.html'
+          href: 'work/project-template-3.html',
+          incomplete: true
         },
         {
           year: '2022',
@@ -124,7 +129,8 @@
           outcome: 'Support Hub Reimagined',
           readingTime: '6 mins',
           tags: ['Systems', 'Strategy'],
-          href: 'work/support-hub.html'
+          href: 'work/support-hub.html',
+          incomplete: true
         }
       ];
 
@@ -189,7 +195,7 @@
               '<span class="case-study-meta-sep">·</span>' +
               '<span class="case-study-meta-item">' + project.outcome + '</span>' +
             '</div>' +
-            '<a href="' + (project.href || '#') + '" class="case-study-btn" title="View case study">Read Case Study</a>' +
+            (project.incomplete ? '' : '<a href="' + (project.href || '#') + '" class="case-study-btn" title="View case study">Read Case Study</a>') +
             '<div class="case-study-footer-bottom">' +
               '<div class="case-study-pills">' +
                 project.tags.map(function (t) {
