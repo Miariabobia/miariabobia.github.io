@@ -456,7 +456,7 @@ main {
 /* --- Contact --- */
 
 .contact {
-  padding: var(--space-2xl) 0;
+  padding: var(--space-md) 0;
 }
 
 .contact-text {
