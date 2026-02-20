@@ -2603,7 +2603,7 @@ main > section {
   width: 100%;
   display: block;
   border-radius: var(--radius-large);
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border: 1px solid var(--slate-200);
   background: #f0f0f0;
