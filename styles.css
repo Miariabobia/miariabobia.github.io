@@ -459,6 +459,15 @@ main {
   padding: var(--space-md) 0;
 }
 
+.contact-subtext {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-meta);
+  margin-bottom: var(--space-lg);
+}
+
 .contact-text {
   font-family: var(--font-sans);
   margin: 0 0 var(--space-sm);
