@@ -8,6 +8,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    .case-pivot-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin: 0 0 24px;
+    }
+    .case-pivot-split-text p { max-width: none; }
+    .case-pivot-split-image { min-width: 0; }
+    @media (max-width: 720px) {
+      .case-pivot-split { grid-template-columns: 1fr; }
+    }
+  </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-45CHFZB80V"></script>
   <script>
@@ -189,17 +203,18 @@
 
       <h2>The Pivot</h2>
 
-      <p>Days before the VP review, the design direction shifted while I was briefly out. The revised concept prioritized long-term scalability but diverged from established commerce patterns — unfamiliar interaction models in a high-stakes checkout flow.</p>
-
-      <p class="case-pull-quote">The VP's feedback was direct: <em>"Don't reinvent the wheel."</em></p>
-
-      <p>In critical workflows like checkout, users don't want novelty. They want clarity and predictability. I pivoted to conventional interaction patterns — not as a creative compromise, but as a strategic choice grounded in what enterprise users actually need when completing a purchase for dozens of devices. Working with the team, I delivered the revised designs on time.</p>
-
-      <div class="case-image-placeholder case-image-placeholder-single">
-        <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/pivot-add-a-line.png" data-lightbox-caption="Add a line — Shop flow" role="button" tabindex="0">
-          <img src="assets/pivot-add-a-line.png" alt="Add a line — device shop with iPhone 17 Pro Max product detail modal (color, storage, payment, add to cart)" class="case-image-placeholder-img" />
+      <div class="case-pivot-split">
+        <div class="case-pivot-split-text">
+          <p>Days before the VP review, the design direction shifted while I was briefly out. The revised concept prioritized long-term scalability but diverged from established commerce patterns — unfamiliar interaction models in a high-stakes checkout flow.</p>
+          <p>The VP's feedback was direct: <em>"Don't reinvent the wheel."</em></p>
+          <p>In critical workflows like checkout, users don't want novelty. They want clarity and predictability. I pivoted to conventional interaction patterns — not as a creative compromise, but as a strategic choice grounded in what enterprise users actually need when completing a purchase for dozens of devices. Working with the team, I delivered the revised designs on time.</p>
         </div>
-        <span class="case-image-placeholder-label">Add a line — Shop flow after pivot to conventional patterns.</span>
+        <div class="case-pivot-split-image">
+          <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/pivot-add-a-line.png" data-lightbox-caption="Add a line — Shop flow" role="button" tabindex="0">
+            <img src="assets/pivot-add-a-line.png" alt="Add a line — device shop with iPhone 17 Pro Max product detail modal (color, storage, payment, add to cart)" class="case-image-placeholder-img" />
+          </div>
+          <span class="case-image-placeholder-label">Add a line — Shop flow after pivot to conventional patterns.</span>
+        </div>
       </div>
 
       <div class="case-divider"></div>
