@@ -8,20 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles.css">
-  <style>
-    .case-pivot-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-      margin: 0 0 24px;
-    }
-    .case-pivot-split-text p { max-width: none; }
-    .case-pivot-split-image { min-width: 0; }
-    @media (max-width: 720px) {
-      .case-pivot-split { grid-template-columns: 1fr; }
-    }
-  </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-45CHFZB80V"></script>
   <script>
@@ -47,9 +33,11 @@
 
       <p class="section-label">Case Study</p>
 
-      <h1>Account Hub Shop Redesign: Leading Through Crisis</h1>
+      <h1>Building the Foundation Nobody Asked For</h1>
 
-      <p>One week before engineering handoff, the lead designer left the project. I was the only designer with cross-domain visibility across Hub, prior e-commerce experience, and established executive trust. I stepped in — and what followed wasn't a one-week sprint. It was four weeks of unglamorous audit work and proactive definition that made execution possible when Shop suddenly became the company's top priority.</p>
+      <p>This project came to me in crisis. One week before engineering handoff, the lead designer left. The designs I inherited had accumulated exploratory scope nobody had documented, requirements that hadn't been validated, and a research base too constrained to stand on. I had two weeks to ramp on a product space I didn't own — and I had to make calls that would determine whether this project shipped at all.</p>
+
+      <p>What followed was methodical. I audited the inherited work, built the framework that protected the team when pressure returned, and shipped three foundational flows instead of eight half-baked ones. The choice wasn't about being cautious. It was about being honest — with myself, with the org, and with the enterprise users who needed this to work.</p>
 
       <div class="case-meta-summary">
         <div class="meta-item">
@@ -65,41 +53,33 @@
           <div class="meta-value">4 weeks (expanded from 1)</div>
         </div>
         <div class="meta-item">
+          <div class="meta-label">Context</div>
+          <div class="meta-value">IT-driven project; design joined 2 weeks before handoff</div>
+        </div>
+        <div class="meta-item">
           <div class="meta-label">Impact</div>
           <div class="meta-value">Delivered on time; scalable foundation for Q1 launch</div>
         </div>
       </div>
 
-      <!-- Before / After images -->
-      <div class="case-state-split-grid">
-        <div class="case-state-plate">
-          <div class="case-state-label">Inherited state</div>
-          <div class="case-state-figure">
-            <div class="case-lightbox-trigger" data-lightbox-src="assets/inherited-state.png" data-lightbox-caption="Inherited state" role="button" tabindex="0">
-              <img src="assets/inherited-state.png" alt="T-Mobile for Business — Add a line, Configure device (inherited state)" class="case-state-img" />
-            </div>
-          </div>
-          <p class="case-state-caption">Add a Line flow with exploratory scope creep and unresolved requirements.</p>
-        </div>
-        <div class="case-state-plate">
-          <div class="case-state-label">Stabilized MVP</div>
-          <div class="case-state-figure">
-            <div class="case-lightbox-trigger" data-lightbox-src="assets/stabilized-mvp.png" data-lightbox-caption="Customize your device — Stabilized MVP" role="button" tabindex="0">
-              <img src="assets/stabilized-mvp.png" alt="T-Mobile for Business — Customize your device: Apple iPhone 17 Pro, color, quantity, storage, and payment options" class="case-state-img" />
-            </div>
-          </div>
-          <p class="case-state-caption">Customize your device — product detail and configuration.</p>
-        </div>
-      </div>
-
-      <div class="case-divider"></div>
-
       <h2>The Situation</h2>
 
-      <p>T-Mobile for Business needed a redesigned Shop experience inside Account Hub — the primary platform for enterprise customers to manage devices, lines, and accounts. The project had been in motion, but the work was unstable: exploratory scope had accumulated, requirements were unresolved, and the lead designer left the week before engineering handoff.</p>
+      <p>T-Mobile for Business needed a redesigned Shop experience inside Account Hub — the primary platform for enterprise customers to manage devices, lines, and accounts. The project had been IT-driven from the start. Design came in late — about two weeks before handoff — which meant technical decisions were already locked in and I was working within constraints I hadn't shaped.</p>
 
-      <p>I was leading Account Hub under a Principal Designer, overseeing scope and strategy across multiple teams. When Shop destabilized, I stepped in. Ramping someone new would have introduced risk we couldn't absorb. I had the context, the relationships, and the cross-domain visibility to move quickly.</p>
+      <p>When the lead designer left a week before engineering handoff, I stepped in. Not because it was my project — but because I was the only designer with cross-domain visibility across Hub, prior ecommerce experience, and established executive trust. Ramping someone new would have introduced risk we couldn't absorb.</p>
 
+      <div class="case-pull-quote">
+        <p>Design had just gotten a seat at the table with IT. If we shipped eight half-baked flows, we'd poison that relationship before it even started. Shipping three solid ones was the only move that built trust.</p>
+      </div>
+
+      <div class="case-constraint-grid">
+        <div class="case-constraint-item"><p>IT-driven process — design joined two weeks before handoff</p></div>
+        <div class="case-constraint-item"><p>Inherited designs with undocumented, unvalidated exploratory scope</p></div>
+        <div class="case-constraint-item"><p>Prior research too constrained to serve as a foundation</p></div>
+        <div class="case-constraint-item"><p>One week to ramp on a product space I didn't own</p></div>
+        <div class="case-constraint-item"><p>Technical decisions already locked before design's involvement</p></div>
+        <div class="case-constraint-item"><p>Enterprise edge cases invisible in existing designs</p></div>
+      </div>
 
       <div class="case-divider"></div>
 
@@ -113,11 +93,13 @@
           <div class="case-intervention-num">1</div>
           <div class="case-intervention-body">
             <h3>Audited all 8 flows</h3>
-            <p>Mapped dependencies, completion states, and structural gaps the previous designs hadn't accounted for. Separated what was essential from what had accumulated through scope creep.</p>
+            <p>I reviewed the requirements for every inherited flow and mapped dependencies, completion states, and structural gaps the previous designs hadn't accounted for. The prior research had insights — but they were constrained to those specific designs, with no comparative context. There was no way to know if the designs were actually better. I knew from working alongside my VP what quality standards mattered. I knew the inherited designs weren't meeting them.</p>
+            <p>Separating what was essential from what had accumulated through scope creep was the first real deliverable. It wasn't a screen. It was clarity.</p>
             <div class="case-detail-list">
               <span class="case-detail-tag">Flow audit</span>
               <span class="case-detail-tag">Dependency mapping</span>
               <span class="case-detail-tag">Scope analysis</span>
+              <span class="case-detail-tag">Requirements review</span>
             </div>
           </div>
         </div>
@@ -126,9 +108,11 @@
           <div class="case-intervention-num">2</div>
           <div class="case-intervention-body">
             <h3>Surfaced real requirements</h3>
-            <p>Met directly with cross-functional partners to surface what the experience actually needed. Audited the live product to identify friction points and enterprise edge cases invisible in the existing designs.</p>
+            <p>I met directly with cross-functional partners to understand what the experience actually needed — not what had been assumed. I converted every requirement into a jobs-to-be-done format, because T-Mobile documents requirements as given/when/then statements that are technically precise but human-invisible. Translating them kept the user visible when the conversation drifted toward specs.</p>
+            <p>I also documented who each requirement came from and what constraints had surfaced during alignment calls. When scope pressure returned, we referenced documented alignment instead of relitigating. That document became a shared source of truth for the whole team.</p>
             <div class="case-detail-list">
               <span class="case-detail-tag">Cross-functional alignment</span>
+              <span class="case-detail-tag">Jobs-to-be-done translation</span>
               <span class="case-detail-tag">Live product audit</span>
               <span class="case-detail-tag">Enterprise edge cases</span>
             </div>
@@ -139,80 +123,77 @@
           <div class="case-intervention-num">3</div>
           <div class="case-intervention-body">
             <h3>Built an operating framework</h3>
-            <p>Created an experience review document — inspired by Amazon's review process — that gave the team a shared system for making decisions and saying no. Stakeholder mapping, scope boundaries, escalation paths. When scope pressure returned, we referenced documented alignment instead of relitigating.</p>
-            <p>This framework became a reusable template across Hub initiatives. It's still in use today.</p>
+            <p>I created an experience review document — inspired by Amazon's review process — that gave the team a shared system for making decisions and saying no. It included stakeholder mapping, scope boundaries, escalation paths, and a backlog for ideas that didn't make the cut but deserved to be sequenced later. I opened every working session with it.</p>
+            <p>When something new came up during the sprint, it went to the backlog. We'd schedule a prioritization call with product, UX, and IT to sequence it together — rather than letting it silently expand the scope. The framework wasn't bureaucracy. It was protection. And it became a reusable template across Hub initiatives. It's still in use today.</p>
             <div class="case-detail-list">
               <span class="case-detail-tag">Experience review document</span>
               <span class="case-detail-tag">Stakeholder mapping</span>
               <span class="case-detail-tag">Scope boundaries</span>
               <span class="case-detail-tag">Decision framework</span>
+              <span class="case-detail-tag">Backlog management</span>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="case-image-placeholder-grid">
-        <div class="case-image-placeholder">
-          <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/work-nobody-saw-shop-flow.png" data-lightbox-caption="The capability document that defined MVP scope" role="button" tabindex="0">
-            <img src="assets/work-nobody-saw-shop-flow.png" alt="Account Hub Shop Flow Enhancements — Overview, Pain Points, Hypothesis" class="case-image-placeholder-img" />
-          </div>
-          <span class="case-image-placeholder-label">The capability document that defined MVP scope.</span>
-        </div>
-        <div class="case-image-placeholder">
-          <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/work-nobody-saw-decisions.png" data-lightbox-caption="Requirements framework used to prevent scope relitigating" role="button" tabindex="0">
-            <img src="assets/work-nobody-saw-decisions.png" alt="Decisions, Scenarios, and Requirements — AHUB Dashboard and Entry Points table" class="case-image-placeholder-img" />
-          </div>
-          <span class="case-image-placeholder-label">Requirements framework used to prevent scope relitigating.</span>
-        </div>
-      </div>
+      <figure class="case-callout-image">
+        <img
+          src="assets/work-nobody-saw-shop-flow.png"
+          alt="Account Hub Shop Flow Enhancements — Overview, Pain Points, Hypothesis"
+        />
+        <figcaption>The capability document that defined MVP scope.</figcaption>
+      </figure>
+
+      <figure class="case-callout-image">
+        <img
+          src="assets/work-nobody-saw-decisions.png"
+          alt="Decisions, Scenarios, and Requirements — AHUB Dashboard and Entry Points table"
+        />
+        <figcaption>Requirements framework — converted to jobs-to-be-done and used to prevent scope relitigating.</figcaption>
+      </figure>
 
       <div class="case-divider"></div>
 
-      <h2>When Priorities Shifted</h2>
+      <h2>Why Three Flows, Not Eight</h2>
 
-      <p>Two weeks in, Shop jumped from #3 to #1. The preparation work became the foundation the team needed to execute quickly. With alignment in place, I proposed reducing 8 flows to 3 foundational ones — creating a complete purchase journey and a scalable architecture future flows could plug into.</p>
+      <p>When Shop jumped from #3 to #1 two weeks in, the preparation work became the foundation the team needed to execute quickly. With alignment in place, I proposed reducing 8 flows to 3 foundational ones.</p>
 
-      <div class="case-flows-container">
-        <div class="case-flow-card">
-          <div class="case-flow-category">01</div>
-          <h3 class="case-flow-title">Add a Line</h3>
-          <div class="case-flow-line" aria-hidden="true"></div>
-          <p class="case-flow-desc">Highest-frequency, highest revenue-impact growth action.</p>
-        </div>
-        <div class="case-flow-card">
-          <div class="case-flow-category">02</div>
-          <h3 class="case-flow-title">Non-Core Devices (IoT / Dialpad)</h3>
-          <div class="case-flow-line" aria-hidden="true"></div>
-          <p class="case-flow-desc">Significant B2B hardware transactions.</p>
-        </div>
-        <div class="case-flow-card">
-          <div class="case-flow-category">03</div>
-          <h3 class="case-flow-title">Lower Funnel (Checkout)</h3>
-          <div class="case-flow-line" aria-hidden="true"></div>
-          <p class="case-flow-desc">Shared completion layer across all flows.</p>
+      <p>This wasn't a scope cut. It was a principled architectural decision. When I reviewed all eight flows against the requirements, I saw that only three were truly foundational — the building blocks everything else would layer onto. The other five were additive. They depended on the three being solid first.</p>
+
+      <p>I'd done enough ecommerce work to recognize the pattern. A complete purchase journey built on a scalable architecture lets you stack future flows on top without reworking the foundation. Shipping eight flows in a compressed timeline — with inherited designs I hadn't fully internalized — would have meant shipping eight things I couldn't stand behind. That wasn't a risk worth taking when design was just earning its place at the table.</p>
+
+      <div class="case-callout">
+        <div class="case-callout-icon">◆</div>
+        <div class="case-callout-body">
+          <h3>The Three Foundational Flows</h3>
+          <p><strong>Add a Line</strong> — Highest-frequency, highest revenue-impact growth action. The most critical path in the purchase journey.</p>
+          <p><strong>Non-Core Devices (IoT / Dialpad)</strong> — Significant B2B hardware transactions with distinct enterprise edge cases.</p>
+          <p><strong>Lower Funnel (Checkout)</strong> — Shared completion layer across all flows. Getting this right meant every future flow would inherit a solid foundation.</p>
         </div>
       </div>
 
-      <p>Deprioritizing 5 flows — including Saved Orders, a committed Q1 feature — required careful framing. I didn't present these as cuts. I framed them as protection: protecting architectural integrity, protecting launch confidence, protecting the ability to deliver deferred features well. I advocated for a fast-follow release on Saved Orders (4–6 weeks post-launch) rather than risk a compromised launch. Stakeholders aligned.</p>
+      <p>Deprioritizing five flows — including Saved Orders, a committed Q1 feature — required careful framing. I didn't present these as cuts. I framed them as protection: protecting architectural integrity, protecting launch confidence, protecting the ability to deliver deferred features well. I advocated for a fast-follow release on Saved Orders (4–6 weeks post-launch) rather than risk a compromised launch. Stakeholders aligned.</p>
 
       <div class="case-divider"></div>
 
       <h2>The Pivot</h2>
 
-      <div class="case-pivot-split">
-        <div class="case-pivot-split-text">
-          <p>Days before the VP review, the design direction shifted while I was briefly out. The revised concept prioritized long-term scalability but diverged from established commerce patterns — unfamiliar interaction models in a high-stakes checkout flow.</p>
-          <p>The VP's feedback was direct: <em>"Don't reinvent the wheel."</em></p>
-          <p>In critical workflows like checkout, users don't want novelty. They want clarity and predictability. I pivoted to conventional interaction patterns — not as a creative compromise, but as a strategic choice grounded in what enterprise users actually need when completing a purchase for dozens of devices. Working with the team, I delivered the revised designs on time.</p>
-        </div>
-        <div class="case-pivot-split-image">
-          <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/pivot-add-a-line.png" data-lightbox-caption="Add a line — Shop flow" role="button" tabindex="0">
-            <img src="assets/pivot-add-a-line.png" alt="Add a line — device shop with iPhone 17 Pro Max product detail modal (color, storage, payment, add to cart)" class="case-image-placeholder-img" />
-          </div>
-          <span class="case-image-placeholder-label">Pivoted design shared with VP.</span>
-        </div>
-      </div>
+      <p>Days before the VP review, the design direction shifted while I was briefly out. The revised concept prioritized long-term scalability but diverged from established commerce patterns — unfamiliar interaction models in a high-stakes checkout flow.</p>
+
+      <p>The VP's feedback was direct: <em>"Don't reinvent the wheel."</em></p>
+
+      <p>This was the same principle I'd been working from all along. I knew from my consumer ecommerce background that there was solid research already done on the consumer side we could leverage. Enterprise users and consumer users have different needs — but foundational interaction patterns in checkout don't need to be reinvented for either. When someone is completing a purchase for dozens of devices, they need clarity and predictability. Novelty is a liability.</p>
+
+      <p>I pivoted to conventional interaction patterns — not as a creative compromise, but as a strategic choice grounded in what enterprise users actually need. Working with the team, I delivered the revised designs on time.</p>
+
+      <figure class="case-callout-image">
+        <img
+          src="assets/pivot-add-a-line.png"
+          alt="Add a line — device shop with iPhone 17 Pro Max product detail modal (color, storage, payment, add to cart)"
+        />
+        <figcaption>Pivoted design shared with VP — conventional interaction patterns chosen deliberately for a high-stakes purchase flow.</figcaption>
+      </figure>
 
       <div class="case-divider"></div>
 
@@ -220,12 +201,17 @@
 
       <p>While executing, I collaborated with our Design Systems lead to build reusable components adopted by other vertical leads across the platform. The operating framework and component patterns reduced duplication, improved consistency, and accelerated subsequent vertical work. We weren't just solving for Shop — we were building infrastructure for the broader Hub redesign.</p>
 
-      <div class="case-image-placeholder case-image-placeholder-single">
-        <div class="case-lightbox-trigger case-image-placeholder-frame" data-lightbox-src="assets/systemic-impact-toolkit.png" data-lightbox-caption="Upper Funnel Toolkit" role="button" tabindex="0">
-          <img src="assets/systemic-impact-toolkit.png" alt="Upper Funnel Toolkit — Dashboard page, navigation organisms, quick actions, account selector, intent picker" class="case-image-placeholder-img" />
-        </div>
-        <span class="case-image-placeholder-label">Component patterns and operating framework adopted across Account Hub verticals.</span>
-      </div>
+      <p>I also initiated a cross-platform Shop collaboration share-out — a monthly forum bringing together designers, content strategists, researchers, and design systems leads from every Shop vertical across T-Mobile: consumer, prepaid, Salesforce, and Account Hub. The first kickoff surfaced something important: the pain points across all these teams were nearly identical. We'd been solving the same problems in isolation.</p>
+
+      <p>I structured this collaboration so it could be sustained without me — documented facilitation, shared outcomes, actionable next steps the team owns. That matters. The goal was never a system that depended on my presence. It was a system that outlasted it.</p>
+
+      <figure class="case-callout-image">
+        <img
+          src="assets/systemic-impact-toolkit.png"
+          alt="Upper Funnel Toolkit — Dashboard page, navigation organisms, quick actions, account selector, intent picker"
+        />
+        <figcaption>Component patterns and operating framework adopted across Account Hub verticals.</figcaption>
+      </figure>
 
       <div class="case-divider"></div>
 
@@ -234,42 +220,50 @@
       <div class="case-stat-row">
         <div class="case-stat-block">
           <div class="case-stat-number">8→3</div>
-          <p class="case-stat-desc">Flows reduced to a foundational MVP — a complete purchase journey and scalable architecture for future flows</p>
+          <p class="case-stat-desc">Flows reduced to a foundational MVP — a complete purchase journey and scalable architecture for future flows to plug into</p>
         </div>
         <div class="case-stat-block">
           <div class="case-stat-number">On time</div>
-          <p class="case-stat-desc">Delivered research-validated designs within the reactivated timeline despite a late design direction pivot</p>
+          <p class="case-stat-desc">Delivered within the reactivated timeline despite a late design direction pivot and compressed ramp period</p>
         </div>
         <div class="case-stat-block">
           <div class="case-stat-number">Still in use</div>
-          <p class="case-stat-desc">The experience review framework became a reusable template adopted across Hub initiatives</p>
+          <p class="case-stat-desc">The experience review framework became a reusable template adopted across Hub initiatives — built to outlast the project</p>
         </div>
       </div>
 
-      <p>Pre-launch research validated the direction: testing confirmed improved task clarity, reduced friction, and stronger confidence among business users. Deferred flows are sequenced intentionally on the roadmap with clear rationale.</p>
+      <p>Pre-launch research validated the direction: testing confirmed improved task clarity, reduced friction, and stronger confidence among business users completing purchases. Deferred flows are sequenced intentionally on the roadmap with clear rationale. Target metrics post-launch include task completion rate, time-to-purchase, and cart abandonment — the signals that will tell us whether the three-flow foundation actually reduced friction the way we designed for.</p>
 
-      <div class="case-image-placeholder-grid">
-        <div class="case-image-placeholder">
-          <div class="case-audit-box case-lightbox-trigger" data-lightbox-src="assets/current-state.png" data-lightbox-caption="MVP Solution - Order Setup" role="button" tabindex="0">
-            <img src="assets/current-state.png" alt="T-Mobile for Business — Order setup, delivery method and line identifiers" class="case-audit-img" />
-            <span class="case-audit-label case-audit-label-overlay">MVP Solution — Order Setup</span>
+      <div class="case-scroll-strip">
+        <div class="case-scroll-strip-item">
+          <img src="assets/inherited-state.png" alt="T-Mobile for Business — Add a line, Configure device (inherited state)" />
+          <div class="case-scroll-strip-caption">
+            <strong>Inherited state</strong>
+            <p>Add a Line flow with exploratory scope creep and unresolved requirements.</p>
           </div>
-          <p class="case-audit-caption">Lower funnel screen for order setup.</p>
         </div>
-        <div class="case-image-placeholder">
-          <div class="case-audit-box case-lightbox-trigger" data-lightbox-src="assets/audit-outcome.png" data-lightbox-caption="Checkout — MVP solution" role="button" tabindex="0">
-            <img src="assets/audit-outcome.png" alt="T-Mobile for Business — Checkout: order summary, contact, address, delivery, and payment details" class="case-audit-img" />
-            <span class="case-audit-label case-audit-label-overlay">MVP solution — Checkout</span>
+        <div class="case-scroll-strip-item">
+          <img src="assets/stabilized-mvp.png" alt="T-Mobile for Business — Customize your device: Apple iPhone 17 Pro" />
+          <div class="case-scroll-strip-caption">
+            <strong>Stabilized MVP</strong>
+            <p>Customize your device — product detail and configuration.</p>
           </div>
-          <p class="case-audit-caption">Lower funnel screen for checkout.</p>
+        </div>
+        <div class="case-scroll-strip-item">
+          <img src="assets/current-state.png" alt="T-Mobile for Business — Order setup, delivery method and line identifiers" />
+          <div class="case-scroll-strip-caption">
+            <strong>MVP Solution — Order Setup</strong>
+            <p>Lower funnel screen for order setup.</p>
+          </div>
+        </div>
+        <div class="case-scroll-strip-item">
+          <img src="assets/audit-outcome.png" alt="T-Mobile for Business — Checkout: order summary, contact, address, delivery, and payment details" />
+          <div class="case-scroll-strip-caption">
+            <strong>MVP Solution — Checkout</strong>
+            <p>Lower funnel screen for checkout.</p>
+          </div>
         </div>
       </div>
-
-      <div class="case-divider"></div>
-
-      <h2>Moving Forward</h2>
-
-      <p>With the foundation stabilized, we shifted from crisis management to proactive iteration. I'm working with research partners to identify high-impact opportunities grounded in usage data and customer behavior, and facilitating cross-functional prioritization to sequence iterative improvements alongside 2026 roadmap initiatives. The shift is intentional: from reactive scope management to evidence-based platform evolution.</p>
 
       <div class="case-divider"></div>
 
@@ -281,15 +275,15 @@
           <div class="case-intervention-num">1</div>
           <div class="case-intervention-body">
             <h3>Clarity is the most valuable artifact in chaos</h3>
-            <p>When priorities are ambiguous, the first deliverable isn't screens — it's definition. The audit work nobody saw was the work that made everything else possible.</p>
+            <p>When priorities are ambiguous, the first deliverable isn't screens — it's definition. The audit work nobody saw was the work that made everything else possible. Every decision I made in the sprint traced back to something we'd documented in that first two weeks.</p>
           </div>
         </div>
 
         <div class="case-intervention-item">
           <div class="case-intervention-num">2</div>
           <div class="case-intervention-body">
-            <h3>Hard calls are easier when anchored to principle</h3>
-            <p>Frameworks turn personal pushback into shared decision-making. The experience review document wasn't bureaucracy — it was protection for the team and the product.</p>
+            <h3>Frameworks turn personal pushback into shared decision-making</h3>
+            <p>The experience review document wasn't bureaucracy. When scope pressure hit, we referenced documented alignment instead of relitigating. It gave the team permission to say no — not because Mia said so, but because we'd all already agreed.</p>
           </div>
         </div>
 
@@ -297,90 +291,37 @@
           <div class="case-intervention-num">3</div>
           <div class="case-intervention-body">
             <h3>Senior work is structuring the path when none exists</h3>
-            <p>It's not about having more answers. It's about doing the foundational work without support or visibility — including when no one is watching.</p>
+            <p>It's not about having more answers. It's about doing the foundational work without support or visibility — including when no one is watching. The operating framework still being used across Hub initiatives didn't have my name on it by the time others adopted it. That was the point.</p>
           </div>
         </div>
 
         <div class="case-intervention-item">
           <div class="case-intervention-num">4</div>
           <div class="case-intervention-body">
-            <h3>Shipping less with integrity builds trust</h3>
-            <p>Choosing convention intentionally in critical workflows isn't a creative failure. It's the right call for users who need clarity over novelty when completing high-stakes purchases.</p>
+            <h3>Shipping less with integrity builds more trust than shipping everything with compromise</h3>
+            <p>Three foundational flows that enterprise users can actually complete a purchase through is worth more than eight flows nobody can rely on. Choosing convention intentionally in critical workflows isn't a creative failure. It's the right call for users who need clarity over novelty when completing high-stakes purchases for dozens of devices.</p>
+          </div>
+        </div>
+
+        <div class="case-intervention-item">
+          <div class="case-intervention-num">5</div>
+          <div class="case-intervention-body">
+            <h3>The gap this project surfaced is worth naming</h3>
+            <p>Design was brought in at the end of an IT-driven process. That limited our ability to influence technical decisions that directly affected the experience. I'm advocating for earlier design involvement in infrastructure planning — not to own the roadmap, but to ensure experience implications are considered before constraints are locked. The cross-platform Shop collaboration I initiated is part of that longer effort: building the conditions for design to have a seat at the table earlier, across every vertical.</p>
           </div>
         </div>
 
       </div>
 
-      <p>This project also surfaced a structural gap worth naming: design was brought in at the end of an IT-driven process, limiting our ability to influence technical decisions that directly affected the experience. Going forward, I'm advocating for earlier design involvement in infrastructure planning — not to own the roadmap, but to ensure experience implications are considered before constraints are locked.</p>
-
     </div>
   </main>
 
-  <!-- Lightbox -->
-  <div class="case-lightbox" id="case-lightbox" role="dialog" aria-modal="true" aria-label="Expanded image" hidden>
-    <div class="case-lightbox-backdrop" id="case-lightbox-backdrop"></div>
-    <div class="case-lightbox-content">
-      <img class="case-lightbox-img" id="case-lightbox-img" src="" alt="" />
-    </div>
-    <p class="case-lightbox-caption" id="case-lightbox-caption"></p>
-  </div>
-
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Portfolio. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Mia Huynh's Portfolio. All rights reserved.</p>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    (function () {
-      var lightbox = document.getElementById('case-lightbox');
-      var lightboxImg = document.getElementById('case-lightbox-img');
-      var lightboxCaption = document.getElementById('case-lightbox-caption');
-      var backdrop = document.getElementById('case-lightbox-backdrop');
-      var closeTimeout = null;
-
-      function openLightbox(src, caption) {
-        if (closeTimeout) clearTimeout(closeTimeout);
-        lightboxImg.src = src;
-        lightboxImg.alt = caption || '';
-        lightboxCaption.textContent = caption || '';
-        lightbox.hidden = false;
-        document.body.style.overflow = 'hidden';
-        requestAnimationFrame(function () { lightbox.classList.add('is-open'); });
-      }
-
-      function closeLightbox() {
-        if (!lightbox.classList.contains('is-open')) return;
-        lightbox.classList.remove('is-open');
-        closeTimeout = setTimeout(function () {
-          lightbox.hidden = true;
-          document.body.style.overflow = '';
-          closeTimeout = null;
-        }, 200);
-      }
-
-      document.querySelectorAll('.case-lightbox-trigger').forEach(function (trigger) {
-        trigger.addEventListener('click', function () {
-          var src = trigger.getAttribute('data-lightbox-src');
-          var caption = trigger.getAttribute('data-lightbox-caption');
-          if (src) openLightbox(src, caption);
-        });
-        trigger.addEventListener('keydown', function (e) {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault();
-            var src = trigger.getAttribute('data-lightbox-src');
-            var caption = trigger.getAttribute('data-lightbox-caption');
-            if (src) openLightbox(src, caption);
-          }
-        });
-      });
-
-      backdrop.addEventListener('click', closeLightbox);
-      lightboxImg.addEventListener('click', closeLightbox);
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
-      });
-    })();
   </script>
 </body>
 </html>
