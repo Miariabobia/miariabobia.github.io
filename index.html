@@ -278,8 +278,8 @@
     <section id="contact" class="contact">
       <h2 class="section-label">Contact</h2>
       <p class="contact-text">Portfolio vibe coded by Mia using Cursor.</p>
-      <p class="contact-subtext">Updated 2/19/2026 @4:18pm</p>
-      <div class="contact-links">
+      <p class="contact-subtext">Updated 3/1/2026</p>
+            <div class="contact-links">
         <a href="https://www.linkedin.com/in/miahuynhux" rel="noopener noreferrer" target="_blank">LinkedIn</a>
       </div>
     </section>
@@ -294,89 +294,84 @@
 
     (function () {
       var projects = [
-        {
-          year: '2026',
-          company: 'T-Mobile for Business',
-          outcome: 'Strategic Shop Redesign',
-          readingTime: '8 mins',
-          tags: ['Systems', 'Strategy'],
-          href: 'work/t-mobile.html',
-          image: 'assets/strategic-shop-redesign.png',
-          featured: true
-        },
-        {
-          year: '2025',
-          company: 'T-Mobile for Business',
-          outcome: 'Reimagining Enterprise Dashboards Through Conversational AI',
-          readingTime: '5 mins',
-          tags: ['AI', 'Systems', 'Strategy'],
-          href: 'work/enterprise-dashboards.html',
-          incomplete: true
-        },
-        {
-          year: '2025',
-          company: 'T-Mobile Innovation Lab',
-          outcome: 'Create-a-Thon: GPT Workflow Optimization',
-          readingTime: '7 mins',
-          tags: ['AI', 'Systems'],
-          href: '#',
-          incomplete: true
-        },
-        {
-          year: '2024',
-          company: 'T-Mobile Accessibility',
-          outcome: 'Network: Speech to Text',
-          readingTime: '5 mins',
-          tags: ['Advanced Prototyping', 'Discovery'],
-          href: 'work/project-template-2.html',
-          image: 'assets/network-speech-to-text.png',
-          incomplete: true
-        },
-        {
-          year: '2023-2024',
-          company: 'T-Mobile',
-          outcome: 'Explorer Prep Program Mentor',
-          readingTime: '6 mins',
-          tags: ['Leadership'],
-          href: 'work/explorer-prep-mentor.html',
-          image: 'assets/explorer-prep-program-mentor.png',
-          featured: true
-        },
-        {
-          year: '2022',
-          company: 'T-Mobile',
-          outcome: 'Leading with human insights',
-          readingTime: '5 mins',
-          tags: ['Field Research', 'Discovery', 'Systems'],
-          href: 'work/leading-with-human-insights.html',
-          featured: true
-        },
-        {
-          year: '2022',
-          company: 'T-Mobile Innovation Lab',
-          outcome: '10X Innovation Fellowship',
-          readingTime: '6 mins',
-          tags: ['AI', 'Discovery', 'Systems', 'Strategy'],
-          href: 'work/project-template-3.html',
-          image: 'assets/10x-innovation-fellowship.png',
-          incomplete: true
-        },
-        {
-          year: '2022',
-          company: 'T-Mobile',
-          outcome: 'Support Hub Reimagined',
-          readingTime: '6 mins',
-          tags: ['Systems', 'Strategy'],
-          href: 'work/support-hub.html',
-          image: 'assets/digital-support-reimagined.png',
-          incomplete: true
-        }
-      ];
-
-      // Sort featured projects to the top
-      projects.sort(function (a, b) {
-        return (b.featured ? 1 : 0) - (a.featured ? 1 : 0);
-      });
+  {
+    year: '2022',
+    company: 'T-Mobile',
+    outcome: 'Leading with human insights',
+    readingTime: '5 mins',
+    tags: ['Field Research', 'Discovery', 'Systems'],
+    href: 'work/leading-with-human-insights.html',
+    featured: true
+  },
+  {
+    year: '2026',
+    company: 'T-Mobile for Business',
+    outcome: 'Strategic Shop Redesign',
+    readingTime: '8 mins',
+    tags: ['Systems', 'Strategy'],
+    href: 'work/t-mobile.html',
+    image: 'assets/strategic-shop-redesign.png',
+    featured: true
+  },
+  {
+    year: '2023-2024',
+    company: 'T-Mobile',
+    outcome: 'Explorer Prep Program Mentor',
+    readingTime: '6 mins',
+    tags: ['Leadership'],
+    href: 'work/explorer-prep-mentor.html',
+    image: 'assets/explorer-prep-program-mentor.png',
+    featured: true
+  },
+  {
+    year: '2025',
+    company: 'T-Mobile for Business',
+    outcome: 'Reimagining Enterprise Dashboards Through Conversational AI',
+    readingTime: '5 mins',
+    tags: ['AI', 'Systems', 'Strategy'],
+    href: 'work/enterprise-dashboards.html',
+    incomplete: true
+  },
+  {
+    year: '2025',
+    company: 'T-Mobile Innovation Lab',
+    outcome: 'Create-a-Thon: GPT Workflow Optimization',
+    readingTime: '7 mins',
+    tags: ['AI', 'Systems'],
+    href: '#',
+    incomplete: true
+  },
+  {
+    year: '2024',
+    company: 'T-Mobile Accessibility',
+    outcome: 'Network: Speech to Text',
+    readingTime: '5 mins',
+    tags: ['Advanced Prototyping', 'Discovery'],
+    href: 'work/project-template-2.html',
+    image: 'assets/network-speech-to-text.png',
+    incomplete: true
+  },
+  {
+    year: '2022',
+    company: 'T-Mobile Innovation Lab',
+    outcome: '10X Innovation Fellowship',
+    readingTime: '6 mins',
+    tags: ['AI', 'Discovery', 'Systems', 'Strategy'],
+    href: 'work/project-template-3.html',
+    image: 'assets/10x-innovation-fellowship.png',
+    incomplete: true
+  },
+  {
+    year: '2022',
+    company: 'T-Mobile',
+    outcome: 'Support Hub Reimagined',
+    readingTime: '6 mins',
+    tags: ['Systems', 'Strategy'],
+    href: 'work/support-hub.html',
+    image: 'assets/digital-support-reimagined.png',
+    incomplete: true
+  }
+];
 
       var INITIAL_VISIBLE = 2;
       var filterBar = document.querySelector('.work-filter-bar');
@@ -406,11 +401,12 @@
       });
 
       function getFilteredProjects() {
-        if (activeFilter === 'all') return projects.slice();
-        return projects.filter(function (p) {
-          return p.tags.indexOf(activeFilter) !== -1;
-        });
-      }
+  var visible = projects.filter(function (p) { return !p.incomplete; });
+  if (activeFilter === 'all') return visible;
+  return visible.filter(function (p) {
+    return p.tags.indexOf(activeFilter) !== -1;
+  });
+}
 
       function getVisibleProjects() {
         var list = getFilteredProjects();
