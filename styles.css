@@ -2556,13 +2556,13 @@ main > section {
 
 .case-scroll-strip-item {
   flex: 0 0 auto;
-  width: 260px;
+  width: 50%;
   scroll-snap-align: start;
 }
 
 .case-scroll-strip-item img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
   border-radius: var(--radius-large);
